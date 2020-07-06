@@ -1,0 +1,21 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 10px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+#template_buttons{
+    margin-top: 1%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display:inline-block;
+}

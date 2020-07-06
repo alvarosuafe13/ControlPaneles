@@ -85,9 +85,9 @@ def crear_template():
     html = "<html ><head></head><body><style> <?php include '../css/templates.css'; ?> </style></body></html>"
     
     
-    client.exec_command('echo \"'+html+'\" > /var/www/html/ControlPaneles/Central/Raspberries/R0.php')
+    client.exec_command('echo \"'+html+'\" > /var/www/html/Central/Raspberries/R0.php')
     
-    client.exec_command('sudo chmod 777 /var/www/html/ControlPaneles/Central/Raspberries/R0.php')
+    client.exec_command('sudo chmod 777 /var/www/html/Central/Raspberries/R0.php')
 
     client.close()
 

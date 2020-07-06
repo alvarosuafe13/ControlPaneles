@@ -21,24 +21,16 @@ def obtener_info_equipo():
 
 #Obtiene la ip priada del equipo y lo retorna
 def obtener_ip_equipo():
-    nombre_equipo = socket.gethostname()
+    #nombre_equipo = socket.gethostname()
     # print(nombre_equipo)
     try:
-        ip_equipo = socket.gethostbyname(nombre_equipo)
+        #ip_equipo = socket.gethostbyname(nombre_equipo)
         # print(ip_equipo)
         #if (not ip_equipo.startswith("10.") or not ip_equipo.startswith("172.") or not ip_equipo.startswith("192.") or not ip_equipo.startswith("192.")):
-         #   s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-          #  s.connect(("8.8.8.8", 80))
-           # ip_equipo = s.getsockname()[0]
-         #   s.close()
-
-       # if (ip_equipo.startswith("10.") or  ip_equipo.startswith("172.") or  ip_equipo.startswith("192.") or ip_equipo.startswith("192.")):
-            #time.sleep(30)
-           # url = 'localhost/Central/Raspberries/Central.php'
-            #chrome_path = '/usr/bin/chromium'
-            #webbrowser.get(chrome_path).open(url)
-
-
+            s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            s.connect(("8.8.8.8", 80))
+            ip_equipo = s.getsockname()[0]
+            s.close()
 
     except OSError as err:
         print("Error OS: {0}".format(err))

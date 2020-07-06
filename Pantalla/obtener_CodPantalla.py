@@ -11,7 +11,7 @@ def obtener_info_equipo():
         with open('/home/pi/Pantalla/evento.json', 'r') as f:
             info = json.load(f)
 
-        print("localhost/ControlPaneles/Central/Raspberries/"+info['CodPantalla']+".php")
+        print("localhost/Central/Raspberries/"+info['CodPantalla']+".php")
         #return ("localhost/Central/Raspberries/"+info['CodPantalla']+".php")
 
     except IOError:
